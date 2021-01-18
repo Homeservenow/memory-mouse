@@ -108,7 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Card(
-              child: Text('Memorise the below shape sequence $_counter', style: TextStyle(color: Colors.grey, fontSize: 20.0)),
+              child: Padding(padding: EdgeInsets.all(10.0), child: Text('Memorise the below shape sequence: $_counter', style: TextStyle(color: Colors.grey, fontSize: 16.0))),
+              margin: EdgeInsets.all(10.0)
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
