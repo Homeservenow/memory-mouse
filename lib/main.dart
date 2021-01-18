@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Memory Mouse',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Memory Mouse'),
     );
   }
 }
@@ -107,8 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Memorize the below shape sequence $_counter',
+            Card(
+              child: Text('Memorise the below shape sequence $_counter', style: TextStyle(color: Colors.grey, fontSize: 20.0)),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
