@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:MemoryMouse/SelectShape.dart';
+import 'package:MemoryMouse/coloredPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -23,6 +25,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 10;
+  var backgroundColor = Colors.orangeAccent;
+
   Timer t;
 
   @override
@@ -33,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print('counter:$_counter');
       if (_counter == 0) {
         t.cancel();
+        route();
         return;
       }
       setState(() {
@@ -40,6 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     });
 
+  }
+
+  route() {
+    Navigator.pushReplacement(context, MaterialPageRoute(
+        builder: (context) => ColoredPage(title: 'Memory Mouse')
+    )
+    );
   }
 
 
@@ -87,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Image.asset('images/circle.jpg', height: 100),
+                        Image.asset('images/circle.png', height: 100),
                       ]
                   ),
                   Column(
@@ -105,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                Image.asset('images/square.jpg', height: 100),
+                Image.asset('images/square.png', height: 100),
                 ]
                 ),
                 Column(

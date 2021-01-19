@@ -1,7 +1,6 @@
-import 'dart:async';
-
 import 'package:MemoryMouse/MemoryMain.dart';
 import 'package:MemoryMouse/SelectShape.dart';
+import 'package:MemoryMouse/coloredPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,6 +30,13 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Memory Mouse'),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/color-page': (context) => ColoredPage(title: 'Memory Mouse'),
+        '/select-shape': (context) => SelectShapePage(title: 'Memory Mouse'),
+      },
     );
   }
 }

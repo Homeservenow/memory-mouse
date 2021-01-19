@@ -67,20 +67,181 @@ class _SelectShapePageState extends State<SelectShapePage> {
                 margin: EdgeInsets.all(10.0)
             ),
             Padding(padding: EdgeInsets.all(30.0), child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Image.asset('images/circle.jpg', height: 50),
+                        Padding(padding: EdgeInsets.all(30.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/circle.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/square.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                        Padding(padding: EdgeInsets.all(20.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/star.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/triangle.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
                       ]
                   ),
                   Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Image.asset('images/square.jpg', height: 50),
+                        Padding(padding: EdgeInsets.all(30.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/star.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/circle.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                        Padding(padding: EdgeInsets.all(20.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/square.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/triangle.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
                       ]
                   )
                 ]
-            )),
+            ),
+            ),
+            Padding(padding: EdgeInsets.all(20.0), child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Padding(padding: EdgeInsets.all(30.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/circle.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/star.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                        Padding(padding: EdgeInsets.all(20.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/square.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/triangle.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                      ]
+                  ),
+                  Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Padding(padding: EdgeInsets.all(30.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/circle.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/star.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                        Padding(padding: EdgeInsets.all(20.0), child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/triangle.png', height: 50),
+                                  ]
+                              ),
+                              Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Image.asset('images/square.png', height: 50),
+                                  ]
+                              )
+                            ]
+                        ),
+                        ),
+                      ]
+                  )
+                ]
+            ),
+            ),
           ],
         ),
       ),
