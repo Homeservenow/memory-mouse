@@ -90,7 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Card(
-                child: Padding(padding: EdgeInsets.all(10.0), child: Text('Memorise the below shape sequence: $_counter', style: TextStyle(color: Colors.grey, fontSize: 16.0))),
+                child: Padding(padding: EdgeInsets.all(10.0), child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                  Text('Memorise the below shape sequence', style: TextStyle(color: Colors.grey, fontSize: 16.0)),
+                  Text('$_counter', style: TextStyle(color: Colors.deepPurple, fontSize: 20.0))
+                ])),
                 margin: EdgeInsets.all(10.0)
             ),
             Padding(padding: EdgeInsets.all(30.0), child: Row(
